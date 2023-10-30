@@ -1,0 +1,117 @@
+---START BREADTH FIRST METHOD---
+57.12 dollar
+18.36 dollar
+23.44 dollar
+11.0 dollar
+20.21 dollar
+87.43 dollar
+1.0 dollar
+36.18 dollar
+68.99 dollar
+21.0 dollar
+51.0 dollar
+111.22 dollar
+44.55 dollar
+77.77 dollar
+48.48 dollar
+543.21 dollar
+101.0 dollar
+345.67 dollar
+251.0 dollar
+151.0 dollar
+57.12 dollar
+18.36 dollar
+23.44 dollar
+11.0 dollar
+20.21 dollar
+87.43 dollar
+1.0 dollar
+36.18 dollar
+68.99 dollar
+21.0 dollar
+51.0 dollar
+111.22 dollar
+44.55 dollar
+77.77 dollar
+48.48 dollar
+543.21 dollar
+101.0 dollar
+345.67 dollar
+251.0 dollar
+151.0 dollar
+---END BREADTH FIRST METHOD---
+---START IN ORDER METHOD---
+1.0 dollar
+11.0 dollar
+18.36 dollar
+20.21 dollar
+21.0 dollar
+36.18 dollar
+51.0 dollar
+57.12 dollar
+23.44 dollar
+87.43 dollar
+68.99 dollar
+44.55 dollar
+48.48 dollar
+101.0 dollar
+111.22 dollar
+77.77 dollar
+151.0 dollar
+251.0 dollar
+345.67 dollar
+543.21 dollar
+---END IN ORDER METHOD---
+---START Pre ORDER METHOD---
+57.12 dollar
+18.36 dollar
+11.0 dollar
+1.0 dollar
+20.21 dollar
+36.18 dollar
+21.0 dollar
+51.0 dollar
+23.44 dollar
+87.43 dollar
+68.99 dollar
+111.22 dollar
+44.55 dollar
+48.48 dollar
+101.0 dollar
+77.77 dollar
+543.21 dollar
+345.67 dollar
+251.0 dollar
+151.0 dollar
+---END Pre ORDER METHOD---
+---START POST ORDER METHOD---
+1.0 dollar
+11.0 dollar
+21.0 dollar
+51.0 dollar
+36.18 dollar
+20.21 dollar
+18.36 dollar
+101.0 dollar
+48.48 dollar
+44.55 dollar
+151.0 dollar
+251.0 dollar
+345.67 dollar
+543.21 dollar
+77.77 dollar
+111.22 dollar
+68.99 dollar
+87.43 dollar
+23.44 dollar
+57.12 dollar
+---END POST ORDER METHOD---
+---OPERATIONS---
+1. Add node
+2. Search node
+3. Delete node
+4. Pre-Order tranversal
+5. Post-order tranversal
+6. In-Order tranversal
+7. Quit
+---OPERATIONS---

@@ -5,12 +5,14 @@ This program gives the user the optoin to create an array, put numbres in an arr
 */
 
 #include <iostream>
+#include <chrono>
 using namespace std;
 
 int IsArrayPrimeIter(int *param, int arrSize){
    int i;
-
-  cout << "Entering IsArrayPrimeIter function" << endl;
+      // Record the start time
+   auto start = std::chrono::high_resolution_clock::now();
+   cout << "Entering IsArrayPrimeIter function" << endl;
   /* checking numbers in array
    for(int i = 0; i < arrSize; i++){
       cout << "Array number " << i + 1 << ": " << param[i] << endl;
@@ -20,6 +22,15 @@ int IsArrayPrimeIter(int *param, int arrSize){
   for(i = 0; i < arrSize; i++){
    if(param[i] == 1 || param[i] == 0){
       //cout << param[i] << " is NOT a prime" << endl;
+      
+      // Record the end time
+   auto end = std::chrono::high_resolution_clock::now();
+      // Calculate the elapsed time
+   auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+
+   cout << "Exiting IsArrayPrimeIter functoin" << endl;
+   cout << "Time taken by IsArrayPrimeIter: " << duration.count() << " microseconds" << endl;
+   
       return 0;
       }
    } 
@@ -27,12 +38,22 @@ int IsArrayPrimeIter(int *param, int arrSize){
    for(i = 2; i <= param[x] / 2; ++i){
       if(param[x] % i == 0){
       //cout << param[x] << " is NOT a prime" << endl;
+      
+      // Record the end time
+   auto end = std::chrono::high_resolution_clock::now();
+      // Calculate the elapsed time
+   auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+
+   cout << "Exiting IsArrayPrimeIter functoin" << endl;
+   cout << "Time taken by IsArrayPrimeIter: " << duration.count() << " microseconds" << endl;
+      
       return 0;
       break;
       }
    }
 }
   cout << "Exiting IsArrayPrimeIter function" << endl; 
+  return 1;
 }
 
 bool IsPrimeRecur(int num, int divisor){
@@ -46,16 +67,32 @@ bool IsPrimeRecur(int num, int divisor){
 
 int IsArrayPrimeRecur(int *param, int arrSize){
    cout << "Entering IsArrayPrimeRecur" << endl;
+      // Record the start time
+   auto start = std::chrono::high_resolution_clock::now();
    for(int i = 0; i < arrSize; ++i){
       if(IsPrimeRecur(param[i], 2)){
          //cout << param[i] << " is a prime a number" << endl;
          
       } else {
         // cout << param [i] << " is NOT a prime number" << endl;
+      // Record the end time
+    auto end = std::chrono::high_resolution_clock::now();
+      // Calculate the elapsed time
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+
+   cout << "Exiting IsArrayPrimerecur functoin" << endl;
+   cout << "Time taken by IsArrayPrimeRecur: " << duration.count() << " microseconds" << endl;
         return 0;
       }
    }
+    // Record the end time
+    auto end = std::chrono::high_resolution_clock::now();
+    // Calculate the elapsed time
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+
    cout << "Exiting IsArrayPrimerecur functoin" << endl;
+   cout << "Time taken by IsArrayPrimeRecur: " << duration.count() << " microseconds" << endl;
+   return 1;
 }
 
 int main(){
@@ -81,7 +118,7 @@ int main(){
    cout << "Size of array: " << arraylen << endl;*/
 
    //put numbers in array
-   cout << "Enter numbers separeted by spaces for your array" << endl;
+   cout << "Enter numbers separated by spaces for your array" << endl;
    for(int i = 0; i < arraySize; i++){
       cin >>  array[i];
       
